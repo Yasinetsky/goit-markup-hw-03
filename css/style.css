@@ -15,7 +15,17 @@
   --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 
+html {
+  box-sizing: border-box;
+}
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0px;
   background-color: #f5f5f5;
   color: var(--primery-text-color);
   font-size: 14px;
@@ -23,6 +33,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+header {
+  background-color: #ccc;
+}
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -42,6 +60,8 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Menu Nav */
@@ -79,61 +99,105 @@ body {
 
 /* order */
 
+.order {
+  text-align: center;
+  background-color: blue;
+}
+
 .order-title {
   color: var(--primary-color-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 30px;
+
 }
 
-.order .button {
+.order .button {            
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
+  min-width: 216px;
 }
 
 /* Features */
+
+.features {
+  background-color: rgb(228, 72, 215);
+}
+.Features-list {
+  display: flex;
+}
 
 .Features-list .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .Features-list p {
   line-height: 1.17;
+  margin-top: 0;
+  margin-bottom: 118px;
 }
 
 /* About US  */
-
+.about {
+  background-color: rgba(168, 146, 146, 0.418);
+}
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
 }
 
 /* Team  */
+
+.team-list {
+margin-bottom: 154px;
+}
+
 .team-list .title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .team-list p {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /* footer */
+.footer {
+  background-color: #ccc;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
 
 .footer .web {
   color: var(--primary-color-white);
@@ -143,21 +207,36 @@ body {
   font-style: normal;
   color: var(--primary-color-white);
   line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 9px;
 }
 
-.footer .address a {
+ .address a {
   font-style: normal;
   color: var(--footer-contact-color);
   line-height: 1.71;
   text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.footer .tel {
+  margin-bottom: 60px;
 }
 /* Buttom */
 
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+
   color: var(--primary-color-white);
   background-color: var(--accent-color);
+  
   font-family: inherit;
   cursor: pointer;
+  text-align: center;
+
 }
 
 .button.primary {
@@ -174,10 +253,15 @@ body {
 
 /* Filter */
 
+.project-filter {
+
+}
+
 .project-filter .button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  padding: 6px 22px;
 }
 
 .project-filter .button:hover,
@@ -194,16 +278,22 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .project .project-group p {
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  margin-left:  auto;
+  margin-right: auto;
+  outline: 1px solid red;
 }
