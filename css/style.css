@@ -43,7 +43,9 @@ header {
   background-color: var(--primary-color-white);
 }
 
-
+.main-nav {
+  display: flex;
+}
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
