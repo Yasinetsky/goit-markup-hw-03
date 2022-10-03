@@ -46,6 +46,7 @@ header {
 .main-nav {
   display: flex;
 }
+
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
