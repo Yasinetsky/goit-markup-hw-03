@@ -44,8 +44,10 @@ header {
 }
 
 .main-nav,
+.main-nav .logo,
 .site-nav,
-.nav {
+.nav,
+.contacts-nav {
   display: flex;
 }
 
@@ -56,6 +58,10 @@ header {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
+
+.main-nav .logo {
+  margin-right: 93px;
 }
 
 .logo:focus {
@@ -72,7 +78,21 @@ header {
   margin: 0;
 }
 
+
 /* Menu Nav */
+
+.site-nav .item {
+margin-right: 50px;
+}
+
+.site-nav .item a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav .item:last-child {
+  margin: 0;
+}
 
 .site-nav .link {
   color: var(--title-text-color);
