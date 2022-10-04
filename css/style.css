@@ -34,6 +34,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -44,13 +50,16 @@ header {
 }
 
 .main-nav,
-.main-nav .logo,
 .site-nav,
 .nav,
 .contacts-nav {
   display: flex;
 }
 
+.main-nav {
+  align-items: center;
+}
+ 
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -62,6 +71,8 @@ header {
 
 .main-nav .logo {
   margin-right: 93px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .logo:focus {
@@ -72,27 +83,22 @@ header {
   color: var(--color-black);
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
 /* Menu Nav */
 
-.site-nav .item {
-margin-right: 50px;
-}
 
 .site-nav .item a {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.site-nav .item:last-child {
-  margin: 0;
+.site-nav .item + .item {
+  margin-left: 50px;
 }
+
+/* .site-nav .item:last-child {
+  margin: 0;
+} */
 
 .site-nav .link {
   color: var(--title-text-color);
@@ -123,6 +129,14 @@ margin-right: 50px;
 .contacts-nav .contacts:hover,
 .contacts-nav .contacts:focus {
   color: var(--accent-color);
+}
+
+.contacts-nav .item + .item {
+  margin-left: 50px;
+}
+
+.contacts-nav {
+  margin: auto;
 }
 
 /* order */
