@@ -85,7 +85,6 @@ header {
 
 /* Menu Nav */
 
-
 .site-nav .item a {
   display: block;
   padding-top: 32px;
@@ -95,10 +94,6 @@ header {
 .site-nav .item + .item {
   margin-left: 50px;
 }
-
-/* .site-nav .item:last-child {
-  margin: 0;
-} */
 
 .site-nav .link {
   color: var(--title-text-color);
@@ -210,15 +205,13 @@ header {
 
 }
 
-.about-item {
-  
-}
-
 /* Team  */
 
-.team-list {
-margin-bottom: 154px;
+.team-grup {
+  display: flex;
+  justify-content: space-between;
 }
+
 
 .team-list .title {
   color: var(--title-text-color);
@@ -238,6 +231,9 @@ margin-bottom: 154px;
   margin-bottom: 30px;
 }
 
+.team-grup .team-list img {
+  margin-bottom: 30px;
+}
 /* footer */
 
 .footer .logo {
