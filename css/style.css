@@ -47,6 +47,7 @@ body {
 
 header {
   background-color: var(--primary-color-white);
+  border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav,
@@ -294,8 +295,8 @@ header {
 
 /* Filter */
 
-.project-filter {
-
+.project-filter .item + .item {
+  margin-left: 8px;
 }
 
 .project-filter .button {
@@ -312,7 +313,14 @@ header {
 }
 
 /* Gruop */
+.project-filter {
+display: flex;
+justify-content: center;
+}
 
+.project-filter .button {
+  border-color: transparent;
+}
 .project-group .second-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -329,6 +337,11 @@ header {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
+/* .project-group .item {
+  border: 1px solid #EEEEEE;
+
+} */
 
 .container {
   width: 1200px;
