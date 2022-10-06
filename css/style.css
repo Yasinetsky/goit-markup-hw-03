@@ -313,6 +313,7 @@ header {
 }
 
 /* Gruop */
+
 .project-filter {
 display: flex;
 justify-content: center;
@@ -320,7 +321,28 @@ justify-content: center;
 
 .project-filter .button {
   border-color: transparent;
+  margin-bottom: 50px;
 }
+
+.project-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-group .item {
+  width: calc((100% - 60px)/3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.project-group .item:nth-last-child(-n + 3){
+  margin-bottom: 0;
+}
+
+.project-group .item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .project-group .second-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -338,16 +360,16 @@ justify-content: center;
   margin-bottom: 20px;
 }
 
-/* .project-group .item {
-  border: 1px solid #EEEEEE;
-
-} */
+.project-group .item {
+  border-bottom: 1px solid #EEEEEE;
+  
+}
 
 .container {
   width: 1200px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left:  auto;
   margin-right: auto;
-  outline: 1px solid red;
-}
+  /* outline: 1px solid red;
+} */
