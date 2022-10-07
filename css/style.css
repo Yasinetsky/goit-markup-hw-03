@@ -4,6 +4,7 @@
 /* акцент  #2196F3 */
 /* вторичный цвет фона #F5F4FA */
 /* футер контакт rgba(255, 255, 255, 0.6) */
+/* цвет подвала #2F303A */
 
 :root {
   --primery-text-color: #757575;
@@ -14,6 +15,7 @@
   --primary-bg-color: #F5F5F5;
   --second-bg-color: #f5f4fa;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --footer-order-color: #2F303A;
 }
 
 html {
@@ -139,6 +141,7 @@ header {
 
 .order {
   text-align: center;
+  background: var(--footer-order-color);
 }
 
 .order-title {
@@ -159,6 +162,7 @@ header {
   letter-spacing: 0.06em;
   padding: 10px 32px;
   min-width: 216px;
+  border: transparent;
 }
 
 /* Features */
@@ -237,8 +241,15 @@ header {
 }
 /* footer */
 
+.footer {
+  background: var(--footer-order-color);
+}
+
 .footer .logo {
+  display: inline-block;
+  margin-top: 60px;
   margin-bottom: 20px;
+  
 }
 
 .footer .web {
@@ -262,6 +273,7 @@ header {
   margin-bottom: 9px;
 }
 .footer .tel {
+  display: inline-block;
   margin-bottom: 60px;
 }
 /* Buttom */
