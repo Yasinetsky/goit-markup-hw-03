@@ -375,6 +375,10 @@ header {
   margin-right: 0;
 }
 
+.project-group .image {
+  display: block;
+}
+
 .project-group .second-title {
   color: var(--title-text-color);
   font-weight: 700;
