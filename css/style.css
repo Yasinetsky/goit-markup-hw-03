@@ -228,8 +228,8 @@ header {
 }
 
 .team-grup .description {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-list .title {
   color: var(--title-text-color);
@@ -280,11 +280,13 @@ header {
   line-height: 1.71;
   text-decoration: none;
   margin-top: 0;
-  margin-bottom: 9px;
+  
 }
-.footer .tel {
-  display: inline-block;
+.footer .mailme{
+margin-bottom: 9px;
+display: inline-block;
 }
+
 /* Buttom */
 
 .button {
