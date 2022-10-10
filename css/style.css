@@ -22,7 +22,10 @@ html {
   box-sizing: border-box;
 }
 
-
+img {
+  display: block;
+  max-width: 100%;
+}
 body {
   margin: 0px;
   color: var(--primery-text-color);
@@ -129,7 +132,13 @@ header {
 }
 
 .contacts-nav {
-  margin: auto;
+  margin-left: auto;
+}
+
+.contacts-nav .contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* order */
@@ -218,6 +227,9 @@ header {
 
 /* Team  */
 
+.team {
+  background-color: var(--second-bg-color);
+}
 .team-list{
   display: flex;
   justify-content: space-between;
