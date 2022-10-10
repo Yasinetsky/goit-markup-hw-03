@@ -242,6 +242,7 @@ header {
 .team-grup .description {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--primary-color-white);
 }
 .team-list .title {
   color: var(--title-text-color);
